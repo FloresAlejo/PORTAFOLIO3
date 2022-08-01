@@ -1,0 +1,547 @@
+/*----------VARIABLES---------- */
+:root{
+    --text-color: #0a0a0f;
+    --bg-color: #FBFCFC;
+    --transition: color 1s, background-color 1.1s ease-in-out;
+}
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: var(--bg-color);
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+/* ---- MIS ESTILOS ---- */
+/*Color rosa : #F3278C*/
+.containerHeader{
+    height: 100vh;
+    background: rgb(128,0,64);
+    background: linear-gradient(90deg, rgba(128,0,64,1) 0%, rgba(0,13,128,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1052px){
+    .containerHeader{
+        height: 1450px;
+    }
+
+}
+
+.containerMain{
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8rem;
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+.letra1{
+    color:var(--bg-color);
+}
+
+.titulo{
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 0.1rem;
+}
+
+.subtitulo{
+    font-size: 1.5rem;
+    
+}
+
+.items{
+    max-width: 27rem;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 1052px){
+    .items{
+        width: 100%;
+        margin: 1rem;
+    }
+
+}
+
+/* ---- NAVEGADOR ---- */
+
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    padding: .5rem 0;
+    margin-top: 1rem;
+}
+
+nav .contenedor{
+    display: flex;
+    margin: 1rem;
+    padding: 0;
+}
+
+.contenedor .contenedorIzq{
+    display: inherit;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 0.1rem;
+
+}
+
+.contenedorLink{
+    margin-left: 6rem;
+}
+
+.contenedorLink a{
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 1rem;
+    transition: 1s;
+}
+
+.contenedorLink a:hover{
+    border-bottom: 1px solid #F3278C;
+    color: #F3278C;
+}
+
+/* ---- SOBRE MI ---- */
+
+.letra2{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitulo2{
+    font-size:2rem;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.foto{
+    border: 6px solid #F3278C;
+    
+}
+
+@media only screen and (max-width: 1052px){
+    .foto{
+        margin: 1rem;
+    }
+}
+.sobreMi{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+span{
+    color: #F3278C;
+}
+
+.linea{
+    height: 4px;
+    width: 50px;
+    background-color: #F3278C;
+    
+}
+
+.buttomcv{
+    background-color: #F3278C;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    color: var(--bg-color);
+    padding: 10px 20px;
+    margin-top: 20rem;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(243, 39, 140);
+    transition: 1s;
+}
+
+.buttomcv:hover{
+    color: #0a0a0f;
+    font-weight: bolder;
+}
+.separador{
+    margin-top: 4rem;
+}
+
+
+
+/* ---- SKILLS ---- */
+
+.skills__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedorSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,13,128,1);
+    font-family:sans-serif;
+    color: var(--bg-color);
+    font-size:1.5rem;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1052px){
+    .card{
+        max-width: 27rem;
+        margin: 1rem;
+    }
+}
+
+.skills__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.skills__tech{
+    margin-right: 6rem;
+}
+
+@media only screen and (max-width: 1052px){
+    .skills__tech{
+        font-size: 1rem;
+    }
+}
+
+.card__title2{
+    margin: 0px;
+    font-size: 3rem;
+}
+
+.linea2{
+    margin-bottom: 3rem;
+}
+
+.skills__bar,
+.skills__bar::after{
+    position: relative;
+    width: 250px;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+@media only screen and (max-width: 1052px){
+    .skills__bar,
+    .skills__bar::after{
+        width: 120px;
+    }
+}
+
+.skills__bar::after{
+    content: "";
+    position: absolute;
+    left: -250px;
+    background-color:#F3278C;
+    transition: var(--transition);
+    animation: skills-bar-fill 2s ease-in-out forwards;
+    transition: var(--transition);
+}
+
+@media only screen and (max-width: 1052px){
+    .skills__bar::after{
+        left: -120px;
+    }
+}
+
+.skills__bar--25::after{
+    --skills-bar-length: 25%;
+}
+
+.skills__bar--50::after{
+    --skills-bar-length: 50%;
+}
+
+.skills__bar--75::after{
+    --skills-bar-length: 75%;
+}
+
+.skills__bar--100::after{
+    --skills-bar-length: 100%;
+}
+
+@keyframes skills-bar-fill{
+    to{
+        transform: translateX(var(--skills-bar-length));
+    }
+}
+
+/* ---- MIS PROYECTOS ---- */
+
+.containerMisProyectos{
+    background-image: url(../Img/Fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tituloMisProjectos{
+    max-width: max-content;
+    margin: auto;
+    color: var(--bg-color);
+    padding: 0.5rem 0.6rem 0.8rem 0.6rem ;
+    border-radius: 5px;
+}
+
+.proyectos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+    width: 80%;
+    margin: auto;
+}
+
+.proyecto{
+    width: 19rem;
+    margin-top: 2rem;
+}
+
+.carta__titulo{
+    padding: 0.2rem 1rem 1rem 1rem;
+    color: var(--bg-color);
+    font-weight: bolder;
+
+}
+
+.carta__titulo h2{
+    margin:0;
+    padding: 0;
+
+}
+.glass{
+    
+    background: rgba(255, 255, 255, 0.144);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+
+}
+
+.img__pro{
+    width: 100%;
+    height: 10rem;
+    border-bottom: 3px solid #F3278C;
+    background: #16161d;
+}
+
+.carta__links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carta__links a, i{
+    color: var(--bg-color);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.carta__links a:hover , i:hover {
+    transform: scale(1.2);
+}
+.carta__links i{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+.project__tag{
+    font-weight: bolder;
+    color: var(--bg-color);
+
+}
+
+/* ---- CONTACTO ---- */
+.contacto{
+    background: var(--bg-color);
+    padding-top: 0;
+    margin-top: 0;
+    color: var(--text-color);
+    margin-bottom: 6rem;
+}
+
+.contacto i{
+    color: var(--text-color);
+    font-size: 5rem;
+    margin-right: 2rem;
+}
+
+.contacto i:hover{
+    color: #F3278C
+}
+
+.contacto__titulo{
+    font-size: 3rem;
+}
+
+.redes{
+    display: flex;
+    justify-content:left;
+}
+
+.izq{
+    width: 30%
+}
+
+.der{
+    width: 50%;
+
+}
+
+@media only screen and (max-width: 1052px){
+    .izq, .der{
+        width: 70%;
+    }
+}
+
+.contacto__con form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__con form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom:2px solid #F3278C;
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.contacto__con form textarea{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    border:2px solid #F3278C;
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    margin-top: 1rem;
+    background: #F3278C;
+    border: none;
+    border:2px solid #F3278C;
+    color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    transition: 1s;
+}
+
+.btn:hover{
+ color: var(--text-color);
+}
+
+.h1_contacto{
+    margin-bottom: 3rem;
+    
+}
+
+.contacto__titulo{
+    margin-bottom: 0px;
+    color: var(--text-color);
+}
+
+footer{
+    background-color: rgb(128,0,64);
+    text-align: center;
+}
+
+footer div{
+    margin: auto;
+}
+
+footer a{
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: bolder;
+}
