@@ -68,18 +68,22 @@ canvas {
 
 /* ---- MIS ESTILOS ---- */
 /*Color rosa : #F3278C*/
+html{
+    scroll-behavior: smooth;
+}
+
 .containerHeader{
     height: 100vh;
     background: rgb(128,0,64);
     background: linear-gradient(90deg, rgba(128,0,64,1) 0%, rgba(0,13,128,1) 100%);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 
 @media only screen and (max-width: 1052px){
     .containerHeader{
-        height: 1450px;
+        height: 1500px;
     }
 
 }
@@ -98,6 +102,12 @@ canvas {
 
 img{
     max-width: 100%;
+}
+
+@media only screen and (min-width: 1052px){
+    .img1{
+        margin-top: 4.5rem;
+    }
 }
 
 .letra1{
@@ -123,6 +133,7 @@ img{
 .items1{
     padding-top: 4.6rem;
 }
+
 @media only screen and (max-width: 1052px){
     .items{
         width: 100%;
